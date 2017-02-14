@@ -4,6 +4,7 @@
 .icon-block .material-icons {
   font-size: inherit;
 }
-#errorModal {
+#errorModal,
+#successfulModal {
   height: 20%;
 }

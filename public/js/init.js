@@ -20,10 +20,11 @@
       };
 
       $.post('/sendEmail', data, function (status) {
-        console.log(status);
         if(status.error){
           $('#errorModal').modal('open');
           $('.errorDetail').text(status.error);
+        } else {
+          $('#successfulModal').modal('open');
         }
       })
     });

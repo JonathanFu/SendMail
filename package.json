@@ -3,17 +3,19 @@
   "version": "0.0.1",
   "author": "Jonathan Fu",
   "description": "A simple Email sending Application",
-  "main": "./app.js",
+  "scripts": {
+    "start": "node ./app"
+  },
   "dependencies": {
-    "express": "~3.1.0",
+    "body-parser": "*",
+    "express": "^4.14.0",
     "jade": "*",
-    "stylus": "*",
-	"serve-favicon": "*",
-	"morgan": "*",
-	"body-parser": "*",
-	"method-override": "*",
-    "mailgun-js": "0.7.10",
-    "sendgrid": "~4.7.1"
+    "mailgun-js": "^0.7.10",
+    "method-override": "*",
+    "morgan": "*",
+    "sendgrid": "^4.7.1",
+    "serve-favicon": "*",
+    "stylus": "*"
   },
   "license": "MIT",
   "engines": {

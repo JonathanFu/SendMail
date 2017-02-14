@@ -27,10 +27,10 @@
 
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
-      <h2 class="header center orange-text">How to use</h2>
+      <h2 class="header center orange-text">Email Form</h2>
       <div class="row ">
-        <p class="col s12 light">It supports both mail service Mailgun and SendGrid.
-          <br/>Fill the following form and press submit button, then check your email box (your typed email address).</p>
+        <p class="col s12 light">It supports two mail services: Mailgun and SendGrid. If one of the services goes down, it will switch to another service.
+          <br/>Fill the following form and press SENDING button, then check your email box (based on your typed email address).</p>
       </div>
       <div class="row">
         <form class="col s12" id="sendEmailForm">
@@ -105,6 +105,15 @@
     <div class="modal-content">
       <h5>Error happened</h5>
       <span class="errorDetail"></span>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">OK</a>
+    </div>
+  </div>
+
+  <div id="successfulModal" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h5>Sent sucessfully</h5>
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">OK</a>
