@@ -5,15 +5,15 @@ exports.send = function (req, res, next) {
 
     var data = req.body;
     data.text = getMailBody(data);
-    data.emailFrom = 'TestUser@gmail.com';
+    data.emailFrom = 'TestUser@dummy.com';
 
     mailgunHandler.send(data,function (err, body) {
 
         if(!err) return res.json(body);
 
-        sendgridHandler.send(data, function (err, data) {
+        sendgridHandler.send(data, function (err, result) {
             if(err) return res.json({error: err});
-            return res.json(data)
+            return res.json(result)
         });
     });
 
