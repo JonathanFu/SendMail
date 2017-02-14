@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Send E-mail Testing</title>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo hide-on-small-and-down">Simple E-Mail Sending Application</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">About</a></li>
+      </ul>
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">About</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <h2 class="header center orange-text">How to use</h2>
+      <div class="row ">
+        <p class="col s12 light">It supports both mail service Mailgun and SendGrid.
+          <br/>Fill the following form and press submit button, then check your email box (your typed email address).</p>
+      </div>
+      <div class="row">
+        <form class="col s12" id="sendEmailForm">
+          <div class="row">
+            <div class="input-field col s12 m6 l6">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="first_name" type="text" class="validate" required="" aria-required="true">
+              <label for="first_name">First Name*</label>
+            </div>
+            <div class="input-field col s12 m6 l6">
+              <input id="last_name" type="text" class="validate" required="" aria-required="true">
+              <label for="last_name">Last Name*</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">email</i>
+              <input id="email" type="email" class="validate" required="" aria-required="true">
+              <label for="email">Email*</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">email</i>
+              <input id="emailCC" type="text" class="validate">
+              <label for="emailCC">Email CC</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">email</i>
+              <input id="emailBCC" type="text" class="validate">
+              <label for="emailBCC">Email BCC</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">subject</i>
+              <input id="subject" type="text" class="validate" required="" aria-required="true">
+              <label for="subject">Subject*</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">message</i>
+              <textarea id="message" class="materialize-textarea" required="" aria-required="true"></textarea>
+              <label for="message">Message*</label>
+            </div>
+          </div>
+          <div class="row center">
+            <div class="input-field col s12">
+              <button class="waves-effect waves-light btn-large sendBtn"><i class="material-icons right">send</i>Sending</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <br>
+
+    </div>
+  </div>
+
+  <footer class="page-footer light-blue">
+    <div class="footer-copyright">
+      <div class="container">
+      Made by Jonathan
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Structure -->
+  <div id="errorModal" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Error happened</h4>
+      <span class="errorDetail"></span>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">OK</a>
+    </div>
+  </div>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
